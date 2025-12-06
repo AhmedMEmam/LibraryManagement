@@ -7,9 +7,9 @@ public record BookDto
     string ISBN,
     DateOnly PublishedDate,
     int Quantity,
-    int CategoryId,
-    int PublisherId,
-    int ShelfId
+    int? CategoryId,
+    int? PublisherId,
+    int? ShelfId
 );
 
 public record BookCreateDto
@@ -18,7 +18,7 @@ public record BookCreateDto
     string ISBN,
     DateOnly PublishedDate,
     int Quantity,
-    int CategoryId,
-    int PublisherId,
-    int ShelfId
+    int? CategoryId,
+    int? PublisherId,
+    int? ShelfId
 );

@@ -7,13 +7,13 @@ public class Book : BaseEntity
     public DateOnly PublishedDate { get; set; }
     public int Quantity { get; set; }
 
-    public int CategoryId { get; set; }
+    public int? CategoryId { get; set; }
     public Category? Category { get; set; }
 
-    public int PublisherId { get; set; }
+    public int? PublisherId { get; set; }
     public Publisher? Publisher { get; set; }
 
-    public int ShelfId { get; set; }
+    public int? ShelfId { get; set; }
     public Shelf? Shelf { get; set; }
 
     public ICollection<BookAuthor> Authors { get; set; } = new List<BookAuthor>();
